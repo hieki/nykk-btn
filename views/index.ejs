@@ -1,15 +1,25 @@
+<%  %>
 <!DOCTYPE html>
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
     <title>nykk btn</title>
+    <script src="./src/bind_button.js"></script>
   </head>
   <body>
 
   <ul>
-    <% for (var i = 0; i < posts.length; i++) { %>
-      <li><%= posts[i] %></li>
-    <% } %>
+
+  <%_ sounds.forEach((sound) => { -%>
+    <%_ const title = sound.split(".")[0]; -%>
+    <%_ const buffer = new Buffer(title); -%>
+    <%_ const id = buffer.toString("base64"); -%>
+    <button class="btn" id="<%= id %>"><%= title %></button>
+    <audio id="<%= `audio-${id}` %>" preload="metadata">
+      <source src="<%= `sounds/${sound}` %>" type="audio/wav">
+    </audio>
+  <%_ }) -%>
+
   </ul>
 
   </body>
