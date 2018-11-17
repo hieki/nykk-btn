@@ -1,0 +1,11 @@
+version: "3.3"
+services:
+  npm:
+    container_name: nykk-btn
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./:/usr/src/nykk-btn
+    working_dir: /usr/src/nykk-btn
+    entrypoint: npm
