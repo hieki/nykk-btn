@@ -4,11 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "gen": "node ./index.js"
+    "gen": "node ./index.js",
+    "eslint": "eslint -c .eslintrc.json ./**/*.js",
+    "eslint-fix": "eslint --fix -c .eslintrc.json ./**/*.js",
+    "prettier": "prettier --write ./**/*.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "hieki",
+  "license": "MIT",
   "devDependencies": {
-    "ejs": "^2.6.1"
+    "ejs": "^2.6.1",
+    "eslint": "^5.8.0",
+    "prettier": "^1.14.3"
   }
 }

@@ -8,6 +8,6 @@ const html = ejs.render(template, {
   sounds
 });
 
-console.log(html)
+console.log(html);
 
-fs.writeFileSync(`${__dirname}/index.html`, html)
+fs.writeFileSync(`${__dirname}/index.html`, html);

@@ -1,0 +1,45 @@
+{
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "rules": {
+    "comma-spacing": ["error", { "before": false, "after": true }],
+    "curly": ["error", "all"],
+    "default-case": "error",
+    "eqeqeq": ["error", "always"],
+    "indent": ["error", 2],
+    "max-depth": ["error", 3],
+    "no-await-in-loop": "error",
+    "no-constant-condition": "error",
+    "no-console": 0,
+    "no-control-regex": "error",
+    "no-dupe-args": "error",
+    "no-dupe-keys": "error",
+    "no-duplicate-case": "error",
+    "no-empty": "error",
+    "no-empty-function": "error",
+    "no-eval": "error",
+    "no-func-assign": "error",
+    "no-ignore": "off",
+    "no-irregular-whitespace": "error",
+    "no-lonely-if": "error",
+    "no-trailing-spaces": "error",
+    "no-unreachable": "error",
+    "no-var": "error",
+    "no-cond-assign": "error",
+    "prefer-const": "warn",
+    "space-before-blocks": "error",
+    "space-in-parens": "error",
+    "space-infix-ops": "error",
+    "space-unary-ops": "error",
+    "strict": [0, "global"],
+    "quotes": ["error", "double", { "allowTemplateLiterals": true }],
+    "semi": ["error", "always"]
+  }
+}
