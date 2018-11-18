@@ -1,4 +1,3 @@
-<%  %>
 <!DOCTYPE html>
 <html lang="ja">
   <head>
@@ -7,8 +6,6 @@
     <script src="./src/bind_button.js"></script>
   </head>
   <body>
-
-  <ul>
 
   <%_ sounds.forEach((sound) => { -%>
     <%_ const title = sound.split(".")[0]; -%>
@@ -19,8 +16,6 @@
       <source src="<%= `sounds/${sound}` %>" type="audio/wav">
     </audio>
   <%_ }) -%>
-
-  </ul>
 
   </body>
 </html>
