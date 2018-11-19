@@ -6,6 +6,7 @@ services:
       context: .
       dockerfile: ./Dockerfile
     volumes:
-      - ./:/usr/src/nykk-btn
+      - .:/usr/src/nykk-btn
+      - /usr/src/nykk-btn/node_modules
     working_dir: /usr/src/nykk-btn
     entrypoint: npm

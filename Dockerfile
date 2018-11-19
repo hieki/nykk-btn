@@ -8,4 +8,5 @@ COPY ./package.json $NYKK_ROOT
 COPY ./package-lock.json $NYKK_ROOT
 
 RUN npm --version && \
-    npm install
+    npm install && \
+    npm ls
