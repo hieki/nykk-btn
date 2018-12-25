@@ -7,7 +7,7 @@
   </head>
   <body>
 
-  <%_ sounds.forEach((sound) => { -%>
+  <%_ sounds.forEach(sound => { -%>
     <%_ const title = sound.split(".")[0]; -%>
     <%_ const buffer = new Buffer(title); -%>
     <%_ const id = buffer.toString("base64"); -%>

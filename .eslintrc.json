@@ -8,6 +8,9 @@
   "parserOptions": {
     "sourceType": "module"
   },
+  "plugins": [
+    "ejs-js"
+  ],
   "rules": {
     "comma-spacing": ["error", { "before": false, "after": true }],
     "curly": ["error", "all"],
