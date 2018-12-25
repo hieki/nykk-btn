@@ -12,10 +12,12 @@
     <%_ const extension = sound.split(".")[1]; -%>
     <%_ const buffer = new Buffer(title); -%>
     <%_ const id = buffer.toString("base64"); -%>
-    <button class="btn" id="<%= id %>"><%= title %></button>
-    <audio id="<%= `audio-${id}` %>" preload="metadata">
-      <source src="<%= `sounds/${sound}` %>" type="audio/<%= `${extension}` %>">
-    </audio>
+    <%_ if (["wav", "mp3", "ogg", "acc"].includes(extension)) { -%>
+      <button class="btn" id="<%= id %>"><%= title %></button>
+      <audio id="<%= `audio-${id}` %>" preload="auto">
+        <source src="<%= `sounds/${sound}` %>" type="audio/<%= `${extension}` %>">
+      </audio>
+    <%_ } -%>
   <%_ }) -%>
 
   </body>
