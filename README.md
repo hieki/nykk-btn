@@ -3,7 +3,7 @@ https://hieki.github.io/nykk-btn/
 
 # 環境
  - `.node-version` を見ろ
- - ちなみに `v4.0.0` でも動いた
+ - ちなみに `v6.0.0` でも動いた
 
 # 作
 ## ローカルの Node.js でやる
