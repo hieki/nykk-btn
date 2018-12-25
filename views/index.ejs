@@ -9,11 +9,12 @@
 
   <%_ sounds.forEach(sound => { -%>
     <%_ const title = sound.split(".")[0]; -%>
+    <%_ const extension = sound.split(".")[1]; -%>
     <%_ const buffer = new Buffer(title); -%>
     <%_ const id = buffer.toString("base64"); -%>
     <button class="btn" id="<%= id %>"><%= title %></button>
     <audio id="<%= `audio-${id}` %>" preload="metadata">
-      <source src="<%= `sounds/${sound}` %>" type="audio/wav">
+      <source src="<%= `sounds/${sound}` %>" type="audio/<%= `${extension}` %>">
     </audio>
   <%_ }) -%>
 
