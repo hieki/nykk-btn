@@ -12,9 +12,9 @@
   "author": "hieki",
   "license": "MIT",
   "devDependencies": {
-    "ejs": "^2.6.1",
-    "eslint": "^5.11.0",
+    "ejs": "^2.5.8",
+    "eslint": "^5.13.0",
     "eslint-plugin-ejs-js": "^0.1.0",
-    "prettier": "^1.15.3"
+    "prettier": "^1.16.4"
   }
 }
