@@ -1,6 +1,6 @@
 "use strict";
 
-const sleep = (num) => {
+const sleep = num => {
   return new Promise(resolve => setTimeout(resolve, num));
 };
 
