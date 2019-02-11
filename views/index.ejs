@@ -15,7 +15,7 @@
       <%_ const id = buffer.toString("base64"); -%>
       <%_ if (["wav", "mp3", "ogg", "acc"].includes(extension)) { -%>
         <button class="btn" id="<%= id %>"><%= title %></button>
-        <audio id="<%= `audio-${id}` %>" preload="auto">
+        <audio id="<%= `audio-${id}` %>" preload="none">
           <source src="<%= `sounds/${sound}` %>" type="audio/<%= `${extension}` %>">
         </audio>
       <%_ } -%>
