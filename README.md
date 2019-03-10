@@ -1,3 +1,6 @@
+# !!!nykk-btn is DEPRECATED!!!
+nykk-btn is Deprecated. Use https://github.com/hieki/hnr-cafe
+
 # 見
 https://hieki.github.io/nykk-btn/
 

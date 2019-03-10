@@ -3,28 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <title>nykk btn</title>
-    <script src="./src/bind_button.js"></script>
   </head>
   <body>
-
-  <p>
-    <%_ sounds.forEach(sound => { -%>
-      <%_ const title = sound.split(".")[0]; -%>
-      <%_ const extension = sound.split(".")[1]; -%>
-      <%_ const buffer = new Buffer(title); -%>
-      <%_ const id = buffer.toString("base64"); -%>
-      <%_ if (["wav", "mp3", "ogg", "acc"].includes(extension)) { -%>
-        <button class="btn" id="<%= id %>"><%= title %></button>
-        <audio id="<%= `audio-${id}` %>" preload="none">
-          <source src="<%= `sounds/${sound}` %>" type="audio/<%= `${extension}` %>">
-        </audio>
-      <%_ } -%>
-    <%_ }) -%>
-  </p>
-
-  <p>
-    <button id="flashback-btn">走馬灯を流す</button>
-  </p>
-
+    <p>
+      nykk-btn was integrated into <a href="https://hnr-cafe.netlify.com/">hnr-cafe</a>.
+    </p>
   </body>
 </html>
